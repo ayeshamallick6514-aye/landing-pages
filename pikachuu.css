@@ -1,0 +1,99 @@
+*{
+ margin: 0; /*imaginary space */
+padding: 0;
+box-sizing: border-box;
+}
+html,
+body{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container{
+   display: flex;
+   height:90%;
+   width:90%;
+   border-radius:20px;
+   overflow: hidden;
+}
+.left{
+    width: 60%;
+    background-color: rgb(252, 198, 55); 
+    padding: 30px 40px;
+    flex-direction: column;
+   display: flex;
+   position: relative;
+}
+.pokeball{
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    width: 180px;
+    opacity: 0.15;
+}
+.left img{
+    width:120px;
+    margin-top: 0.5px;
+}
+.right{
+    width:40%;
+    background-color: bisque;
+    position: relative;
+    
+
+}
+.pikachu{
+    position: absolute;
+    top:50%;
+    right: 40px;
+    transform: translate(-50%,-50%);
+}
+.dots{
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dots span{
+    height: 5px;
+    width:5px ;
+    border-radius:50% ;
+    background-color: black;
+}
+.menu{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    font-size: 25px;
+}
+.gen{
+    font-size: 12px;
+    letter-spacing: 4px;
+    
+}
+.description{
+    width: 70% ;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+.left h1{
+    font-size: 65px;
+    font-weight: 700px;
+}
+.page-number{
+    margin-top: 25px;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+
+}
+.page-number span{
+    width:30px;
+    height:1px;
+    background-color: black;
+}
